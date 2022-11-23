@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fundo.png);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundo-primeiro);
+    padding: 30px;
+    max-width: 350px;
+    height:650px;
+    border-radius: 10px;
+}
+
+.camposInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.radios {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.radios > input {
+    margin-right: 12px;
+}
+
+.radios > label {
+    margin-right: 5px;
+}
+
+.camposInputs > input {
+    margin-bottom: 10px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho > h1 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+button {
+    width: 200px;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--color-botoes);
+    color: var(--fundo-primeiro);
+    font-weight: 600;
+}
+
