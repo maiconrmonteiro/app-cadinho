@@ -21,6 +21,11 @@ function gerarRecibo() {
     var carro = window.document.getElementById('carro')
     var placa = window.document.getElementById('placa')
 
+    var servico1 = window.document.getElementById('servicos1')
+    var servico2 = window.document.getElementById('servicos2')
+    var servico3 = window.document.getElementById('servicos3')
+    var servico4 = window.document.getElementById('servicos4')
+
 
     var checagem = window.document.getElementsByName('formaPagto')
     var formaPagto = ''
@@ -47,26 +52,37 @@ function gerarRecibo() {
     <div class="conteudo-recibo">
         <p class="conteudo">
             Recebi(bemos) de <strong>${pagador.value.toUpperCase()}</strong> - CPF/CNPJ Nº <strong>${documento.value}</strong>, a importancia de <strong>R$ ${valor.value}</strong> (<strong>${extenso.value.toUpperCase()}</strong>) referente ao conserto do carro <strong> ${carro.value.toUpperCase()}</strong> com placa <strong>${placa.value.toUpperCase()}</strong>
-        </p>
+        </p><br>
         <p class="sercicos-realizados">
-            Serviços realizados:<br>
-            
+            Reparo nas peças:<br>
+            <strong>${servico1.value}</strong><br>
+            <strong>${servico2.value}</strong><br>
+            <strong>${servico3.value}</strong><br>
+            <strong>${servico4.value}</strong>
         </p>
     </div>
     <div class="forma-pagto">
         <p>Pagamento:  <strong>${formaPagto}</strong></p>
+        <br>
+        <br>
     </div>
     <div class="cidade">
-        <p>BIGUAÇU, ${dataAtual} </p>
+        <p>BIGUAÇU, ${dataAtual} </p><br><br>
     </div>
     <div class="assinatura">
         <div class="assinatura-cadinho">
-            <img src="../src/img/assinatura-cadinho.png" alt="">
+            <img class="assinatura-caneta" src="src/img/assinatura-cadinho.png" alt="Assinatura Cadinho">
         </div>
-        <p>____________________________</p><br><br>
+        <p>____________________________</p>
         <p>Ricardo Carlos de Fraga</p>
             <p>26.439.271/0001-31</p>
             <p>(48) 9 8415-2125</p>
+    </div>
+    <div class="btn">
+  
+
+        <button id="botao" onclick="window.print()">Imprimir / Salvar</button>
+               
     </div>
 
 </div>
@@ -77,4 +93,5 @@ function gerarRecibo() {
         campos.style.color = 'black'
         campos.style.boxShadow = 'none'
         logo.style.display = 'none'
+
 }
