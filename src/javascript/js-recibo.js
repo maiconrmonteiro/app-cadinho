@@ -37,7 +37,39 @@ function gerarRecibo() {
 
 
     campos.innerHTML = (`
-     
+
+    <div class="recibo-pronto">
+    <div class="cabecalho">
+        <img src="" alt="">
+        <h1>Recibo</h1>
+        <p>Nº ${controle}</p>
+    </div>
+    <div class="conteudo-recibo">
+        <p class="conteudo">
+            Recebi(bemos) de <strong>${pagador.value.toUpperCase()}</strong> - CPF/CNPJ Nº <strong>${documento.value}</strong>, a importancia de <strong>R$ ${valor.value}</strong> (<strong>${extenso.value.toUpperCase()}</strong>) referente ao conserto do carro <strong> ${carro.value.toUpperCase()}</strong> com placa <strong>${placa.value.toUpperCase()}</strong>
+        </p>
+        <p class="sercicos-realizados">
+            Serviços realizados:<br>
+            
+        </p>
+    </div>
+    <div class="forma-pagto">
+        <p>Pagamento:  <strong>${formaPagto}</strong></p>
+    </div>
+    <div class="cidade">
+        <p>BIGUAÇU, ${dataAtual} </p>
+    </div>
+    <div class="assinatura">
+        <div class="assinatura-cadinho">
+            <img src="../src/img/assinatura-cadinho.png" alt="">
+        </div>
+        <p>____________________________</p><br><br>
+        <p>Ricardo Carlos de Fraga</p>
+            <p>26.439.271/0001-31</p>
+            <p>(48) 9 8415-2125</p>
+    </div>
+
+</div>
 
         `);
         
