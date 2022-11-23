@@ -9,16 +9,6 @@ body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-.cabecalho {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cabecalho > h1 {
-    margin-bottom: 20px;
-}
-
 .conteiner {
     display: flex;
     flex-direction: column;
@@ -29,47 +19,34 @@ body {
     border-radius: 10px;
 }
 
-.camposInputs {
+.cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
 }
 
-.servicos {
+.info-cliente, .info-veiculo, .info-servico, .info-valor {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-.radios {
-    margin-top: 20px;
+input {
+    
+}
+
+fieldset {
+    padding: 10px;
+}
+
+.botoes {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
-.radios > input {
-    margin-right: 12px;
-}
-
-.radios > label {
-    margin-right: 5px;
-}
-
-.camposInputs > input {
-    margin-bottom: 10px;
-}
-
-.servicos > select {
-    margin: 3px;
-}
-
-
-.btn {
-    margin-top: 20px;
-}
-
-button {
+.botoes > button {
     width: 200px;
     margin: 10px;
     padding: 7px;
@@ -80,20 +57,6 @@ button {
     font-weight: 600;
 }
 
-button:hover {
+.botoes > button:hover {
     background-color: var(--cor-hover);
-}
-
-
-
-/* Daqui pra frente estilização do recibo */
-
-.recibo-pronto {
-    padding: 100px;
-}
-
-.assinatura {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
