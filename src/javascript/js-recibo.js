@@ -44,8 +44,10 @@ function gerarRecibo() {
     campos.innerHTML = (`
 
     <div class="recibo-pronto">
+    <div>
+        <img class="logo" src="../img/logo.png" alt="">
+    </div>
     <div class="cabecalho">
-        <img src="" alt="">
         <h1>Recibo</h1>
         <p>Nº ${controle}</p>
     </div>
@@ -70,7 +72,7 @@ function gerarRecibo() {
         <p>BIGUAÇU, ${dataAtual} </p><br><br><br><br>
     </div>
     <div class="assinatura" >
-        <img class="assinatura-caneta" src="../src/img/assinatura-cadinho.png" alt="Assinatura Cadinho">
+        <img class="assinatura-caneta" src="../img/assinatura-cadinho.png" alt="Assinatura Cadinho">
     </div>
     <div class="assinatura">
         <p>____________________________</p>
