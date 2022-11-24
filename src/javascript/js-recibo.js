@@ -51,7 +51,7 @@ function gerarRecibo() {
     </div>
     <div class="conteudo-recibo">
         <p class="conteudo">
-            Recebi(bemos) de <strong>${pagador.value.toUpperCase()}</strong> - CPF/CNPJ Nº <strong>${documento.value}</strong>, a importancia de <strong>R$ ${valor.value}</strong> (<strong>${extenso.value.toUpperCase()}</strong>) referente ao conserto do carro <strong> ${carro.value.toUpperCase()}</strong> com placa <strong>${placa.value.toUpperCase()}</strong>
+            Recebi(bemos) de <strong>${pagador.value.toUpperCase()}</strong> - CPF/CNPJ Nº <strong>${documento.value}</strong>, a importancia de <strong>R$ ${valor.value}</strong> (<strong>${extenso.value.toUpperCase()}</strong>) referente ao reparo no carro <strong> ${carro.value.toUpperCase()}</strong> com placa <strong>${placa.value.toUpperCase()}</strong>
         </p><br>
         <p class="sercicos-realizados">
             Reparo nas peças:<br>
@@ -59,7 +59,7 @@ function gerarRecibo() {
             <strong>${servico2.value}</strong><br>
             <strong>${servico3.value}</strong><br>
             <strong>${servico4.value}</strong>
-        </p>
+        </p><br>
     </div>
     <div class="forma-pagto">
         <p>Pagamento:  <strong>${formaPagto}</strong></p>
@@ -67,12 +67,12 @@ function gerarRecibo() {
         <br>
     </div>
     <div class="cidade">
-        <p>BIGUAÇU, ${dataAtual} </p><br><br>
+        <p>BIGUAÇU, ${dataAtual} </p><br><br><br><br>
+    </div>
+    <div class="assinatura" >
+        <img class="assinatura-caneta" src="../src/img/assinatura-cadinho.png" alt="Assinatura Cadinho">
     </div>
     <div class="assinatura">
-        <div class="assinatura-cadinho">
-            <img class="assinatura-caneta" src="src/img/assinatura-cadinho.png" alt="Assinatura Cadinho">
-        </div>
         <p>____________________________</p>
         <p>Ricardo Carlos de Fraga</p>
             <p>26.439.271/0001-31</p>
@@ -88,7 +88,7 @@ function gerarRecibo() {
 </div>
 
         `);
-        
+        assinatura.style.display = 'block'
         campos.style.background = 'hsl(225, 100%, 98%'
         campos.style.color = 'black'
         campos.style.boxShadow = 'none'

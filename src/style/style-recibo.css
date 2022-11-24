@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     background-color: var(--fundo-primeiro);
     padding: 30px;
-    max-width: 350px;
+    width: 80vw;
     height:650px;
     border-radius: 10px;
 }
@@ -85,20 +85,14 @@ button:hover {
 }
 
 
-
 /* Daqui pra frente estilização do recibo */
 
 .recibo-pronto {
     padding: 10px;
-    max-width: 350px;
+    width: 80vw;
     height: 600px;
 }
 
-.assinatura {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .cidade {
     display: flex;
@@ -109,13 +103,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;   
-}
-
-
-.assinatura-caneta {
-    width: 230px;
-    height: 50px;
-    transform: translateY(20px);
 }
 
 

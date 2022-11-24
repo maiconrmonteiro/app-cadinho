@@ -11,3 +11,13 @@ body {
 .btn {
     display: none;
 }
+
+.recibo-pronto {
+    padding: 10px;
+    width: 90vw;
+    height: 100vh;
+    
+}
+
+
+
