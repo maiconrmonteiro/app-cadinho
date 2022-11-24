@@ -53,7 +53,7 @@ function gerarRecibo() {
     </div>
     <div class="conteudo-recibo">
         <p class="conteudo">
-            Recebi(bemos) de <strong>${pagador.value.toUpperCase()}</strong> - CPF/CNPJ Nº <strong>${documento.value}</strong>, a importancia de <strong>R$ ${valor.value}</strong> (<strong>${extenso.value.toUpperCase()}</strong>) referente ao reparo no carro <strong> ${carro.value.toUpperCase()}</strong> com placa <strong>${placa.value.toUpperCase()}</strong>
+            Recebi(bemos) de <strong>${pagador.value.toUpperCase()}</strong> - CPF/CNPJ Nº <strong>${documento.value}</strong>, a importancia de <strong>R$ ${valor.value}</strong> (<strong>${extenso.value.toUpperCase()}</strong>) referente ao serviço de <strong>martelinho de ouro</strong> no carro <strong> ${carro.value.toUpperCase()}</strong> com placa <strong>${placa.value.toUpperCase()}</strong>
         </p><br>
         <p class="sercicos-realizados">
             Reparo nas peças:<br>
