@@ -8,9 +8,6 @@ body {
 }
 
 
-.btn {
-    display: none;
-}
 
 .recibo-pronto {
     padding: 10px;
@@ -19,5 +16,6 @@ body {
     
 }
 
-
-
+.btn {
+    display: none;
+}

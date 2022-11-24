@@ -7,117 +7,122 @@
     <title>Orçamento</title>
     <link rel="stylesheet" href="../style/reset.css">
     <link rel="stylesheet" href="../style/style-orcamento.css">
+    <link rel="stylesheet" href="../style/style-impressora.css" media="print">
+    
 </head>
 <body>
     <main>
-        <div class="conteiner">
-            <div class="cabecalho">
-                <h1>Orçamento</h1>
-            </div>
-            <form>
-                <fieldset class="info-cliente">
-                    <legend>Informações do Cliente</legend>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="campos" id="nome">
-                    <label for="documento">Documento</label>
-                    <input type="number" name="campos" id="documento">
-                </fieldset>
-                <fieldset class="info-veiculo">
-                    <legend>Iformaçoes do veículo</legend>
-                    
-                    <label for="carro">Carro</label>
-                    <input type="text" name="campo" id="carro">
-                    <label for="cor">Cor</label>
-                    <input type="text" name="campos" id="cor">
-                    <label for="placa">Placa</label>
-                    <input type="text" name="campos" id="placa">
-                </fieldset>
-                <fieldset class="info-servico">
-                    <legend>Serviços</legend>
-                    <label for="">Escolha o serviço</label>
-                    <select name="" id="servicos1">
-                        <option selected disabled value=""></option>
-                        <option value="Paralama direito">Paralama direito</option>
-                        <option value="Paralama esquedo">Paralama esquerdo</option>
-                        <option value="Porta Dianteira direita">Porta dianteira direita</option>
-                        <option value="Porta dianteira esquerda">Porta dianteira esquerda</option>
-                        <option value="Porta traseira direita">Porta traseira direita</option>
-                        <option value="">Porta traseira esquerda</option>
-                        <option value="Porta traseira esquerda">Coluna direita</option>
-                        <option value="Coluna esquerda">Coluna esquerda</option>
-                        <option value="Lateral direira">Lateral direira</option>
-                        <option value="Lateral esquerda">Lateral esquerda</option>
-                        <option value="Tampa do porta mala">Tampa do porta mala</option>
-                        <option value="Capo">Capo</option>
-                        <option value="Teto">Teto</option>
-                        <option value="Parachoque traseiro">Parachoque traseiro</option>
-                        <option value="Parachoque dianteiro">Parachoque dianteiro</option>
-                    </select>
-                    <select name="" id="servicos2">
-                        <option selected disabled value=""></option>
-                        <option value="Paralama direito">Paralama direito</option>
-                        <option value="Paralama esquedo">Paralama esquerdo</option>
-                        <option value="Porta Dianteira direita">Porta dianteira direita</option>
-                        <option value="Porta dianteira esquerda">Porta dianteira esquerda</option>
-                        <option value="Porta traseira direita">Porta traseira direita</option>
-                        <option value="">Porta traseira esquerda</option>
-                        <option value="Porta traseira esquerda">Coluna direita</option>
-                        <option value="Coluna esquerda">Coluna esquerda</option>
-                        <option value="Lateral direira">Lateral direira</option>
-                        <option value="Lateral esquerda">Lateral esquerda</option>
-                        <option value="Tampa do porta mala">Tampa do porta mala</option>
-                        <option value="Capo">Capo</option>
-                        <option value="Teto">Teto</option>
-                        <option value="Parachoque traseiro">Parachoque traseiro</option>
-                        <option value="Parachoque dianteiro">Parachoque dianteiro</option>
-                    </select>
-                    <select name="" id="servicos3">
-                        <option selected disabled value=""></option>
-                        <option value="Paralama direito">Paralama direito</option>
-                        <option value="Paralama esquedo">Paralama esquerdo</option>
-                        <option value="Porta Dianteira direita">Porta dianteira direita</option>
-                        <option value="Porta dianteira esquerda">Porta dianteira esquerda</option>
-                        <option value="Porta traseira direita">Porta traseira direita</option>
-                        <option value="">Porta traseira esquerda</option>
-                        <option value="Porta traseira esquerda">Coluna direita</option>
-                        <option value="Coluna esquerda">Coluna esquerda</option>
-                        <option value="Lateral direira">Lateral direira</option>
-                        <option value="Lateral esquerda">Lateral esquerda</option>
-                        <option value="Tampa do porta mala">Tampa do porta mala</option>
-                        <option value="Capo">Capo</option>
-                        <option value="Teto">Teto</option>
-                        <option value="Parachoque traseiro">Parachoque traseiro</option>
-                        <option value="Parachoque dianteiro">Parachoque dianteiro</option>
-                    </select>
-                    <select name="" id="servicos4">
-                        <option selected disabled value=""></option>
-                        <option value="Paralama direito">Paralama direito</option>
-                        <option value="Paralama esquedo">Paralama esquerdo</option>
-                        <option value="Porta Dianteira direita">Porta dianteira direita</option>
-                        <option value="Porta dianteira esquerda">Porta dianteira esquerda</option>
-                        <option value="Porta traseira direita">Porta traseira direita</option>
-                        <option value="">Porta traseira esquerda</option>
-                        <option value="Porta traseira esquerda">Coluna direita</option>
-                        <option value="Coluna esquerda">Coluna esquerda</option>
-                        <option value="Lateral direira">Lateral direira</option>
-                        <option value="Lateral esquerda">Lateral esquerda</option>
-                        <option value="Tampa do porta mala">Tampa do porta mala</option>
-                        <option value="Capo">Capo</option>
-                        <option value="Teto">Teto</option>
-                        <option value="Parachoque traseiro">Parachoque traseiro</option>
-                        <option value="Parachoque dianteiro">Parachoque dianteiro</option>
-                    </select>
-                </fieldset>
-                <fieldset class="info-valor">
-                    <legend>Valor total</legend>
-                    <label for="valor">Valor</label>
-                    <input type="number" name="campos" id="valor">
-                </fieldset>
-            </form>
-            <div class="botoes">
-                <button class="botao" onclick="gerar()">Gerar Orçamento</button>
+        <div id="campos">
+            <div class="conteiner">
+                <div class="cabecalho">
+                    <h1>Orçamento</h1>
+                </div>
+                <form>
+                    <fieldset class="info-cliente">
+                        <legend>Informações do Cliente</legend>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="campos" id="nome">
+                        <label for="documento">Documento</label>
+                        <input type="number" name="campos" id="documento">
+                    </fieldset>
+                    <fieldset class="info-veiculo">
+                        <legend>Iformaçoes do veículo</legend>
+                        
+                        <label for="carro">Carro</label>
+                        <input type="text" name="campo" id="carro">
+                        <label for="cor">Cor</label>
+                        <input type="text" name="campos" id="cor">
+                        <label for="placa">Placa</label>
+                        <input type="text" name="campos" id="placa">
+                    </fieldset>
+                    <fieldset class="info-servico">
+                        <legend>Serviços</legend>
+                        <label for="">Escolha o serviço</label>
+                        <select name="" id="servicos1">
+                            <option selected disabled value=""></option>
+                            <option value="Paralama direito">Paralama direito</option>
+                            <option value="Paralama esquedo">Paralama esquerdo</option>
+                            <option value="Porta Dianteira direita">Porta dianteira direita</option>
+                            <option value="Porta dianteira esquerda">Porta dianteira esquerda</option>
+                            <option value="Porta traseira direita">Porta traseira direita</option>
+                            <option value="">Porta traseira esquerda</option>
+                            <option value="Porta traseira esquerda">Coluna direita</option>
+                            <option value="Coluna esquerda">Coluna esquerda</option>
+                            <option value="Lateral direira">Lateral direira</option>
+                            <option value="Lateral esquerda">Lateral esquerda</option>
+                            <option value="Tampa do porta mala">Tampa do porta mala</option>
+                            <option value="Capo">Capo</option>
+                            <option value="Teto">Teto</option>
+                            <option value="Parachoque traseiro">Parachoque traseiro</option>
+                            <option value="Parachoque dianteiro">Parachoque dianteiro</option>
+                        </select>
+                        <select name="" id="servicos2">
+                            <option selected disabled value=""></option>
+                            <option value="Paralama direito">Paralama direito</option>
+                            <option value="Paralama esquedo">Paralama esquerdo</option>
+                            <option value="Porta Dianteira direita">Porta dianteira direita</option>
+                            <option value="Porta dianteira esquerda">Porta dianteira esquerda</option>
+                            <option value="Porta traseira direita">Porta traseira direita</option>
+                            <option value="">Porta traseira esquerda</option>
+                            <option value="Porta traseira esquerda">Coluna direita</option>
+                            <option value="Coluna esquerda">Coluna esquerda</option>
+                            <option value="Lateral direira">Lateral direira</option>
+                            <option value="Lateral esquerda">Lateral esquerda</option>
+                            <option value="Tampa do porta mala">Tampa do porta mala</option>
+                            <option value="Capo">Capo</option>
+                            <option value="Teto">Teto</option>
+                            <option value="Parachoque traseiro">Parachoque traseiro</option>
+                            <option value="Parachoque dianteiro">Parachoque dianteiro</option>
+                        </select>
+                        <select name="" id="servicos3">
+                            <option selected disabled value=""></option>
+                            <option value="Paralama direito">Paralama direito</option>
+                            <option value="Paralama esquedo">Paralama esquerdo</option>
+                            <option value="Porta Dianteira direita">Porta dianteira direita</option>
+                            <option value="Porta dianteira esquerda">Porta dianteira esquerda</option>
+                            <option value="Porta traseira direita">Porta traseira direita</option>
+                            <option value="">Porta traseira esquerda</option>
+                            <option value="Porta traseira esquerda">Coluna direita</option>
+                            <option value="Coluna esquerda">Coluna esquerda</option>
+                            <option value="Lateral direira">Lateral direira</option>
+                            <option value="Lateral esquerda">Lateral esquerda</option>
+                            <option value="Tampa do porta mala">Tampa do porta mala</option>
+                            <option value="Capo">Capo</option>
+                            <option value="Teto">Teto</option>
+                            <option value="Parachoque traseiro">Parachoque traseiro</option>
+                            <option value="Parachoque dianteiro">Parachoque dianteiro</option>
+                        </select>
+                        <select name="" id="servicos4">
+                            <option selected disabled value=""></option>
+                            <option value="Paralama direito">Paralama direito</option>
+                            <option value="Paralama esquedo">Paralama esquerdo</option>
+                            <option value="Porta Dianteira direita">Porta dianteira direita</option>
+                            <option value="Porta dianteira esquerda">Porta dianteira esquerda</option>
+                            <option value="Porta traseira direita">Porta traseira direita</option>
+                            <option value="">Porta traseira esquerda</option>
+                            <option value="Porta traseira esquerda">Coluna direita</option>
+                            <option value="Coluna esquerda">Coluna esquerda</option>
+                            <option value="Lateral direira">Lateral direira</option>
+                            <option value="Lateral esquerda">Lateral esquerda</option>
+                            <option value="Tampa do porta mala">Tampa do porta mala</option>
+                            <option value="Capo">Capo</option>
+                            <option value="Teto">Teto</option>
+                            <option value="Parachoque traseiro">Parachoque traseiro</option>
+                            <option value="Parachoque dianteiro">Parachoque dianteiro</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="info-valor">
+                        <legend>Valor total</legend>
+                        <label for="valor">Valor</label>
+                        <input type="number" name="campos" id="valor">
+                    </fieldset>
+                </form>
+                <div class="botoes">
+                    <button class="botao" onclick="gerar()">Gerar Orçamento</button>
+                </div>
             </div>
         </div>
     </main>
+    <script src="../javascript/js-orcamento.js"></script>
 </body>
 </html>

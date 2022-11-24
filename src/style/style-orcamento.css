@@ -14,8 +14,8 @@ body {
     flex-direction: column;
     background-color: var(--fundo-primeiro);
     padding: 30px;
-    max-width: 350px;
-    height:650px;
+    width: 80vw;
+    height:100vh;
     border-radius: 10px;
 }
 
@@ -33,9 +33,6 @@ body {
     align-items: center;
 }
 
-input {
-    
-}
 
 fieldset {
     padding: 10px;
@@ -58,5 +55,52 @@ fieldset {
 }
 
 .botoes > button:hover {
+    background-color: var(--cor-hover);
+}
+
+
+.assinatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.assinatura-caneta {
+    transform: translateY(25px);
+}
+
+
+
+
+/*
+        estilo do orçamento pronto
+*/
+
+#campos {
+    margin: 20px;
+}
+
+.logo-orcamento {
+    width: 40%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+button {
+    width: 200px;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--color-botoes);
+    color: var(--fundo-primeiro);
+    font-weight: 600;
+}
+
+button:hover {
     background-color: var(--cor-hover);
 }
