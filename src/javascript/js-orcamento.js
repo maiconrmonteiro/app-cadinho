@@ -56,7 +56,7 @@ function gerar() {
         </fieldset>
         <fieldset class="info-servicos">
             <legend>Serviços</legend>
-            <p>Manutenção nas seguintes peças: <br>
+            <p>Reparo nas seguintes peças: <br>
                 ${servicos1.value} <br>
                 ${servicos2.value} <br>
                 ${servicos3.value} <br>
