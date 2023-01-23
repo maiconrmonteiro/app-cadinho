@@ -65,7 +65,14 @@ function gerar() {
         </fieldset>
         <br>
         <div class="valor-servico">
-            <p>O valor total do serviço é <strong>${valor.value}</strong></p>
+            <p>
+            O valor total do serviço é <strong>${valor.value}</strong>
+            </p>
+            <br>
+            <br>
+            <p>
+            Esse orçamento tem validade de 15 dias após  <strong>${dataAtual}</strong>
+            </p>
         </div>
         <br>
         <div class="assinatura" >
