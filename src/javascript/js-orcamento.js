@@ -55,8 +55,9 @@ function gerar() {
             <p>Placa: ${placa.value}</p>
         </fieldset>
         <fieldset class="info-servicos">
-            <legend>Serviços</legend>
-            <p>Reparo nas seguintes peças: <br>
+            <legend>Martelinho de Ouro</legend>
+            <p
+            <br>
                 ${servicos1.value} <br>
                 ${servicos2.value} <br>
                 ${servicos3.value} <br>
