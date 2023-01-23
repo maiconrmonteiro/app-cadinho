@@ -1,8 +1,8 @@
-var dataReal = new Date();
+    var dataReal = new Date();
     var dia = String(dataReal.getDate()).padStart(2, '0');
     var mes = String(dataReal.getMonth() + 1).padStart(2, '0');
     var ano = dataReal.getFullYear();
-    dataAtual = dia + '/' + mes + '/' + ano;
+    var dataAtual = dia + '/' + mes + '/' + ano;
     var hora = dataReal.getMinutes()
     var controle = hora + mes + dia
 
@@ -37,7 +37,7 @@ function gerar() {
             
         
         <fieldset class="info-empresa">
-            <legend>Martelinho de Ouro</legend>
+            <legend>Data ${dataAtual}</legend>
             <p>Nome Fantasia: Cadinho Martelinho de Ouro </p>
             <p>CNPJ: 26.439.271/0001-31</p>
             <p>Cidade: Biguaçu</p>
@@ -67,13 +67,10 @@ function gerar() {
         <br>
         <div class="valor-servico">
             <p>
-            O valor total do serviço é <strong>${valor.value}</strong>
+            O valor total do serviço é <strong> R$ ${valor.value}</strong>
             </p>
             <br>
             <br>
-            <p>
-            Esse orçamento tem validade de 15 dias após  <strong>${dataAtual}</strong>
-            </p>
         </div>
         <br>
         <div class="assinatura" >
