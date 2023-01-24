@@ -23,6 +23,10 @@ body {
     
 }
 
+.assinatura .assinatura-caneta {
+    margin-top: -35px;
+}
+
 .btn {
     display: none;
 }
