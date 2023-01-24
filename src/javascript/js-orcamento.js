@@ -1,3 +1,52 @@
+   // teste que estou fazendo
+
+   var currentTime = new Date()
+var horas = currentTime.getHours();
+var minutos = currentTime.getMinutes();
+var segundos = currentTime.getSeconds(); 
+var diaa = currentTime.getDate(); 
+var mess = currentTime.getMonth();
+var anoo = currentTime.getFullYear();  
+var Diaa = currentTime.getDay(); 
+var Mess = currentTime.getUTCMonth();
+
+if (minutos < 10)
+minutos = "0" + minutos
+if (segundos < 10)
+segundos = "0" + segundos
+if (dia < 10)
+dia = "0" + dia
+if (mes < 10)
+mes = "0" + mes
+
+arrayDia = new Array();
+   arrayDia[0] = "Domingo";
+   arrayDia[1] = "Segunda-Feira";
+   arrayDia[2] = "Terça-Feira";
+   arrayDia[3] = "Quarta-Feira";
+   arrayDia[4] = "Quinta-Feira";
+   arrayDia[5] = "Sexta-Feira";
+   arrayDia[6] = "Sábado";
+
+var arrayMess = new Array();
+   arrayMess[0] = "Janeiro";
+   arrayMess[1] = "Fevereiro";
+   arrayMess[2] = "Março";      
+   arrayMess[3] = "Abril";
+   arrayMess[4] = "Maio";
+   arrayMess[5] = "Junho";
+   arrayMess[6] = "Julho";
+   arrayMess[7] = "Agosto";
+   arrayMess[8] = "Setembro";
+   arrayMess[9] = "Outubro";
+   arrayMess[10] = "Novembro";
+   arrayMess[11] = "Dezembro";
+
+
+
+   
+   //fim do teste
+    
     var dataReal = new Date();
     var dia = String(dataReal.getDate()).padStart(2, '0');
     var mes = String(dataReal.getMonth() + 1).padStart(2, '0');
@@ -23,6 +72,8 @@ function gerar() {
 
     var valor = window.document.getElementById('valor');
 
+    
+
 
     campos.innerHTML = `
     <div class="conteudo">
@@ -35,9 +86,17 @@ function gerar() {
         </div>
         </div>
             
+        <div>
+            <p>
+            ${arrayDia[Diaa] + ", " + diaa + " de " + arrayMess[Mess] + " de " + anoo}
+            <br>
+            <br>
+            </p>
+
+        </div>
         
         <fieldset class="info-empresa">
-            <legend>Data ${dataAtual}</legend>
+            <legend>Martelinho de Ouro</legend>
             <p>Nome Fantasia: Cadinho Martelinho de Ouro </p>
             <p>CNPJ: 26.439.271/0001-31</p>
             <p>Cidade: Biguaçu</p>
@@ -55,8 +114,10 @@ function gerar() {
             <p>Placa: ${placa.value}</p>
         </fieldset>
         <fieldset class="info-servicos">
-            <legend>Martelinho de Ouro</legend>
-            <p
+            <legend>Serviços</legend>
+            <p>
+            Reparo nas peças:
+            </p>
             <br>
                 ${servicos1.value} <br>
                 ${servicos2.value} <br>
