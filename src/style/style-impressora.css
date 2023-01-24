@@ -7,7 +7,14 @@ body {
     display: flex;
 }
 
+.div-logo > img {
+    width: 30%;
+    margin-bottom: 350px;
+}
 
+#corpo {
+    margin-top: -300px;
+}
 
 .recibo-pronto {
     padding: 10px;
