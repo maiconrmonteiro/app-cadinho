@@ -60,6 +60,11 @@ function gerar() {
 
     var nome = window.document.getElementById('nome');
     var documento = window.document.getElementById('documento');
+    documento = documento.value
+
+    if (documento == "") {
+        documento = 'Não informado' 
+    }
 
     var carro = window.document.getElementById('carro');
     var cor = window.document.getElementById('cor');
@@ -72,10 +77,13 @@ function gerar() {
 
     var valor = window.document.getElementById('valor');
 
-    
+    valor = valor.value
 
-
-    campos.innerHTML = `
+    if(valor == "") {
+        alert('Você esqueceu do valor Cadinho')
+        document.location.reload(true);
+    } else {
+            campos.innerHTML = `
     <div class="conteudo">
         <div class="topo-orcamento">
         <div class="div-logo">
@@ -106,7 +114,7 @@ function gerar() {
             <fieldset class="info-clientes">
                 <legend>Cliente</legend>
                 <p>Cliente: ${nome.value}</p>
-                <p>Documento: ${documento.value}</p>
+                <p>Documento: ${documento}</p>
             </fieldset>
             <fieldset class="info-veiculos">
                 <legend>Informação do Veiculo</legend>
@@ -129,7 +137,7 @@ function gerar() {
             <br>
             <div class="valor-servico">
                 <p>
-                O valor total do serviço é <strong> R$ ${valor.value}</strong>
+                O valor total do serviço é <strong> R$ ${valor}</strong>
                 </p>
                 <br>
                 <br>
@@ -157,6 +165,7 @@ function gerar() {
     
     </div>
     `;
+    }
 
 
 
