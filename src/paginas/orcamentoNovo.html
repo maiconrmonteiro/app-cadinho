@@ -1,13 +1,77 @@
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        
+    }
+
+    .conteiner {
+        padding: 20px;
+    }
+
+    .cabecaOrcamento{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logoOrcamento {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .cabecalho-pa {
+        padding: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        margin-left: 15px;
+        margin-top: -15px;
+    }
+
+    hr {
+        margin-bottom: 15px
+    }
+
+    .assinado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 85px;
+    }
+
+    .divBotão {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+</style>
+
+
+
+
+
+
+
+
+
 
 <div class="conteiner">
-    <hr>
+    <hr class="primeiraLinha">
 
     <div class="cabecaOrcamento">
         <div>
-            <img src="../img/logo.png" alt="">
+            <img class="logoOrcamento" src="../img/logo.png" alt="">
+            <h4>Martelinho de Ouro</h4>
         </div>
-        <div>
-            <h1>Orçamento Nº ${controle}</h1>
+        <div class="cabecalho-pa">
+            <h3>Orçamento Nº ${controle}</h3>
             <p>Nome Fantasia: Cadinho Martelinho de Ouro </p>
             <p>CNPJ: 26.439.271/0001-31</p>
             <p>www.cadinhofraga.com.br</p>
@@ -42,9 +106,9 @@
         <p><strong>R$</strong> ${valor.value}</p>
     </div>
     <hr>
-    <div>
+    <div class="assinado">
         <img src="" alt="">
-        <p>___________________</p>
+        <p>______________________________</p>
         <p>Ricardo Carlos de Fraga</p>
         <p>26.439.271/0001-31</p>
         <p>(48) 9 84152125</p>
