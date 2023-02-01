@@ -28,8 +28,8 @@ body {
     flex-direction: column;
     background-color: var(--fundo-primeiro);
     padding: 30px;
-    width: 80vw;
-    height:650px;
+    width: 100vw;
+    height:100vh;
     border-radius: 10px;
 }
 

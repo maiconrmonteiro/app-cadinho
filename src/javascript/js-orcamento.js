@@ -84,86 +84,65 @@ function gerar() {
         document.location.reload(true);
     } else {
             campos.innerHTML = `
-    <div class="conteudo">
-        <div class="topo-orcamento">
-        <div class="div-logo">
-            <img class="logo-orcamento" src="../img/logo.png" alt="Logo Cadinho">
-        </div>
-    <div id="corpo">
-            <div class="cabecalho">
-                <h1>Orçamento</h1>
-            </div>
-            </div>
-                
-            <div class="data-extenso">
-                <p>
-                ${arrayDia[Diaa] + ", " + diaa + " de " + arrayMess[Mess] + " de " + anoo}
-                <br>
-                <br>
-                </p>
+  
+            <div class="conteiner">
+    <hr class="primeiraLinha">
 
-            </div>
-            
-            <fieldset class="info-empresa">
-                <legend>Martelinho de Ouro</legend>
-                <p>Nome Fantasia: Cadinho Martelinho de Ouro </p>
-                <p>CNPJ: 26.439.271/0001-31</p>
-                <p>Cidade: Biguaçu</p>
-                <p>Contato: (48) 9 8475-2125</p>
-            </fieldset>
-            <fieldset class="info-clientes">
-                <legend>Cliente</legend>
-                <p>Cliente: ${nome.value}</p>
-                <p>Documento: ${documento}</p>
-            </fieldset>
-            <fieldset class="info-veiculos">
-                <legend>Informação do Veiculo</legend>
-                <p>Carro: ${carro.value}</p>
-                <p>Cor: ${cor.value}</p>
-                <p>Placa: ${placa.value}</p>
-            </fieldset>
-            <fieldset class="info-servicos">
-                <legend>Serviços</legend>
-                <p>
-                Reparo nas peças:
-                </p>
-                <br>
-                    ${servicos1.value} <br>
-                    ${servicos2.value} <br>
-                    ${servicos3.value} <br>
-                    ${servicos4.value}
-                </p>
-            </fieldset>
-            <br>
-            <div class="valor-servico">
-                <p>
-                O valor total do serviço é <strong> R$ ${valor}</strong>
-                </p>
-                <br>
-                <br>
-            </div>
-            <br>
-            <div class="assinatura" >
-            <img class="assinatura-caneta" src="../img/assinatura-cadinho.png" alt="Assinatura Cadinho">
-                </div>
-                <div class="assinatura">
-                <p>____________________________</p>
-                <p>Ricardo Carlos de Fraga</p>
-                <p>26.439.271/0001-31</p>
-                <p>(48) 9 8415-2125</p>
+    <div class="cabecaOrcamento">
+        <div>
+            <img class="logoOrcamento" src="../img/logo.png" alt="">
+            <h4>Martelinho de Ouro</h4>
         </div>
+        <div class="cabecalho-pa">
+            <h3>Orçamento Nº ${controle}</h3>
+            <p>Nome Fantasia: Cadinho Martelinho de Ouro </p>
+            <p>CNPJ: 26.439.271/0001-31</p>
+            <p>www.cadinhofraga.com.br</p>
+            <p>Contato: (48) 9 8475-2125</p>
+        </div>
+        
     </div>
-        <div class="btn">
+    <hr>
+    <div class="cliente">
+        <p><strong>Data Emissão:</strong> ${arrayDia[Diaa] + ", " + diaa + " de " + arrayMess[Mess] + " de " + anoo}</p>
+        <p><strong>Dados do Cliente</strong></p>
+        <p><strong>Nome:</strong> ${nome.value}</p>
+        <p><strong>Documento:</strong> ${documento}</p>
+    </div>
+    <hr>
+    <div class="veiculo">
+        <p><strong>Informações do Veiculo</strong></p>
+        <p><strong>Carro:</strong> ${carro.value}</p>
+        <p><strong>Cor:</strong> ${cor.value}</p>
+        <p><strong>Placa:</strong> ${placa.value}</p>
+    </div>
+    <hr>
+    <div class="servicosEfetuados">
+        <p><strong>Reparo nas peças:</strong></p>
+        <p>${servicos1.value}</p>
+        <p>${servicos2.value}</p>
+        <p>${servicos3.value}</p>
+        <p>${servicos4.value}</p>
+    </div>
+    <div class="valorTotal">
+        <p><strong>Total Geral</strong></p>
+        <p><strong>R$</strong> ${valor}</p>
+    </div>
+    <hr>
+    <div class="assinado">
+        <img src="../img/assinatura-cadinho.png" alt="">
+        <p>______________________________</p>
+        <p>Ricardo Carlos de Fraga</p>
+        <p>26.439.271/0001-31</p>
+        <p>(48) 9 84152125</p>
+    </div>
+    <div class="divBotão">
             <button id="botao" onclick="window.print()">Imprimir / Salvar</button>
-        </div>
-        
-        
     </div>
+</div>
 
-    
-    
-    
-    </div>
+
+
     `;
     }
 

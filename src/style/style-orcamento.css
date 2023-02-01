@@ -1,20 +1,22 @@
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/fundo.png);
+    background-color: var(--fundo-primeiro);
     width: 100vw;
     height: 100vh;
     font-family: 'Red Hat Display', sans-serif;
 }
+
 
 .conteiner {
     display: flex;
     flex-direction: column;
     background-color: var(--fundo-primeiro);
     padding: 30px;
-    width: 80vw;
+    width: 100vw;
     height:100vh;
     border-radius: 10px;
 }
@@ -104,3 +106,117 @@ button {
 button:hover {
     background-color: var(--cor-hover);
 }
+
+    .conteiner {
+        padding: 20px;
+    }
+
+    .cabecaOrcamento {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logoOrcamento {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .cabecalho-pa {
+        padding: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        margin-left: 15px;
+        margin-top: -15px;
+    }
+
+    hr {
+        margin-bottom: 15px
+    }
+
+    .assinado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 85px;
+    }
+
+    .divBotão {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .valorTotal {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+
+
+    /* 
+    Novo orçamento
+    */
+
+    .conteiner {
+        padding: 20px;
+    }
+
+    .cabecaOrcamento {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logoOrcamento {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .cabecalho-pa {
+        padding: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        margin-left: 15px;
+        margin-top: -15px;
+    }
+
+    hr {
+        margin-bottom: 15px
+    }
+
+    .assinado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 85px;
+    }
+
+    .divBotão {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .valorTotal {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .assinado > img {
+        transform: translateY(25px);
+    }
