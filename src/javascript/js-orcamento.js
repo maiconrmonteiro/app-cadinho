@@ -134,7 +134,7 @@ function gerar() {
         <p>______________________________</p>
         <p>Ricardo Carlos de Fraga</p>
         <p>26.439.271/0001-31</p>
-        <p>(48) 9 84152125</p>
+        <p>(48) 9 84752125</p>
     </div>
     <div class="divBotão">
             <button id="botao" onclick="window.print()">Imprimir / Salvar</button>
